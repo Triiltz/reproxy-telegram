@@ -86,9 +86,9 @@ Nesse json verifique o valor de `result.0.message.chat.id`, esse é o seu chat I
 tente encerrar e iniciar o chat novamente, pois o chat ID é gerado apenas quando você iniciar uma conversa com o seu bot.
 
 
-Ufa! Agora estamos prontos para ir ao código em si! Dentro do arquivo `reverse_proxy.go` na pasta `proxy`, você deve configurar o seu token do Telegram bot e o seu chat ID no seguinte trecho de código:
+Ufa! Agora estamos prontos para ir ao código em si! Dentro do arquivo `reverse_proxy.go` na pasta `reverse_proxy`, você deve configurar o seu token do Telegram bot e o seu chat ID no seguinte trecho de código:
 ``` go
-const (
+var (
 	telegramToken = "BOT_TOKEN"	// Token do bot Telegram
 	chatID        = "YOUR_CHAT_ID"	// ID do chat do Telegram
 )
